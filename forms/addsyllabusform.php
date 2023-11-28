@@ -12,6 +12,7 @@
             <tr>
                 <td>Syllabus Code</td>
                 <td><input type="text" name="code"></td>
+                <link rel="stylesheet" type="text/css" href="../CSS/stylesheet2.css">
             </tr>
             <tr>
                 <td>Syllabus Author</td>
@@ -36,7 +37,7 @@
             </tr>
             <tr>
                 <td></td>
-                <td><input type="submit" name="Submit" value="Add"></td>
+                <td><input type="submit" name="Submit" value="Add" id="btn"></td>
             </tr>
         </table>
     </form>

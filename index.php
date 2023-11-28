@@ -7,6 +7,7 @@
 <html>
     <head>
         <title>Sample CRUD</title>
+        <link rel="stylesheet" type="text/css" href="./CsS/stylesheet.css">
     </head>
     <body>
         <h1> My Subjects </h1>

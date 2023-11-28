@@ -12,6 +12,7 @@
 <html>
     <head>
         <title>Edit Data </title>
+        <link rel="stylesheet" type="text/css" href="../CSS/stylesheet2.css">
     </head>
     <body>
         <h1> Edit Subject</h1>
@@ -30,7 +31,7 @@
                 <tr>
                     
                     <td><input type="hidden" name="id" value="<?php echo $_GET['id'];?>"></td>
-                    <td><input type="submit" name="update" value="Update"></td>
+                    <td><input type="submit" name="update" value="Update" id="btn"></td>
                 </tr>
             </table>
         </form>
