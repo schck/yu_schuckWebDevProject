@@ -15,21 +15,19 @@
             <tr bgcolor='#CCCCCC'>
                 <td>ID</td>
                 <td>Subject Code </td>
+                <td>Subject Name </td>
                 <td>Action</td>
             </tr>
             <?php
                 while ($res = mysqli_fetch_assoc($result)) {
                     echo"<tr>";
-                    echo"td".$res["subject_id"]."</td";
-                    echo"td".$res["subject_code"]."</td";
-                    echo"td".$res["subject_name"]."</td";
-                    echo"<td><a href=\"forms/editform.php?id=$res[ssubject_id]\">Edit</a> |
-                         onClick =\"return confirm('Are you sure you want to delete')\">Delete</a></td>";
-                    
+                    echo"<td>".$res["subject_ID"]."</td>";
+                    echo"<td>".$res["subject_Code"]."</td>";
+                    echo"<td>".$res["subject_Name"]."</td>";
+                    echo"<td><a href=\"forms/editform.php?id=$res[subject_ID]\">Edit</a> |
+                        <a href=\"functions/delete.php?id=$res[subject_ID]\" onClick =\"return confirm('Are you sure you want to delete')\">Delete</a></td>";
                 }
             ?>
         </table>
     </body>
 </html>
-
->>>>>>> a3af154b3934f24599d1fe1a390f0c00350c8efd

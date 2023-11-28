@@ -2,10 +2,10 @@
 
     include_once("../dbConnection/mysqlconfig_connection.php");
     $id = $_GET["id"];
-    $result = mysqli_query($dbc,"SELECT * FROM tblsubject WHERE subjects_id=$id");
+    $result = mysqli_query($dbc,"SELECT * FROM tblsubjects WHERE subject_ID=$id");
     while ($res = mysqli_fetch_array($result)) {
-        $code = $res["subject_code"];
-        $name = $res["subject_name"];
+        $code = $res["subject_Code"];
+        $name = $res["subject_Name"];
     }
 ?>
 <!DOCTYPE html>

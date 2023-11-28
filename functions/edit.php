@@ -15,7 +15,7 @@
 
         }
         else{
-            mysqli_query($dbc,"UPDATE tblsubject SET aubject_code='$code', subject_name='$name' WHERE subject_id='$id'");
+            mysqli_query($dbc,"UPDATE tblsubjects SET subject_Code='$code', subject_Name='$name' WHERE subject_ID='$id'");
             header("Location:../index.php");
         }
 
